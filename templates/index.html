@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitX Fitness - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">FitX Fitness</div>
+        <nav>
+            <a href="{{ url_for('home') }}#home">Home</a>
+            <a href="{{ url_for('membership') }}#membership">Membership</a>
+            <a href="{{ url_for('about') }}#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>Welcome to FitX Fitness</h1>
+            <p>Premium experience with consistent quality</p>
+            <a href="{{ url_for('membership') }}#membership" class="btn">Explore Membership</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 FitX Fitness All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

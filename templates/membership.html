@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTRO Fitness - Membership</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">EXTRO Fitness</div>
+        <nav>
+            <a href="{{ url_for('home') }}#home">Home</a>
+            <a href="{{ url_for('membership') }}#membership">Membership</a>
+            <a href="{{ url_for('about') }}#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <h2>Our Membership Plans</h2>
+        <div class="card-container">
+
+            <div class="card">
+             <img src="{{ url_for('static', filename='SILVER.png') }}" alt="Silver Membership">
+                <h3>Silver</h3>
+                <ul>
+                    <li class="price">2000 PKR</li>
+                    <li>Full gym access (basic equipment)</li>
+                    <li>Standard workout schedule</li>
+                    <li>Trainer guidance (general)</li>
+                    <li>Clean changing & locker facility</li>
+                </ul>
+            </div>
+
+            <div class="card">
+            <img src="{{ url_for('static', filename='GOLD.png') }}" alt="Gold Membership">
+                <h3>Gold</h3>
+                <ul>
+                    <li class="price">3500 PKR</li>
+                    <li>Full gym access (all equipment)</li>
+                    <li>Personal workout guidance</li>
+                    <li>Cardio + strength training plan</li>
+                    <li>Diet & fitness tips</li>
+                </ul>
+            </div>
+
+            <div class="card">
+               <img src="{{ url_for('static', filename='PLATINUM.png') }}" alt="Platinum Membership">
+                <h3>Platinum</h3>
+                <ul>
+                    <li class="price">5000 PKR</li>
+                    <li>Unlimited gym access</li>
+                    <li>Personal trainer (1-on-1 sessions)</li>
+                    <li>Customized workout & diet plan</li>
+                    <li>Priority support & premium facilities</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 FitX Fitness All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
